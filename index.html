@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Visual Secret Sharing Scheme in JS</title>
+    <style>
+      li {
+        background-color: honeydew;
+        padding: 10px;
+        margin: 10px;
+      }
+      canvas {
+        vertical-align: top;
+        border: solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>VSS: Visual Secret Sharing</h1>
+
+    <p><a href="https://github.com/y-ishida/vss-js">GitHub</a></p>
+
+    <input type="file" id="input_file">
+
+    <ul>
+      <li>Original
+        <canvas id="org_canvas"></canvas>
+      </li>
+      <li>Gray scale
+        <canvas id="gray_canvas"></canvas>
+      </li>
+      <li>Binary
+        <canvas id="binary_canvas"></canvas>
+      </li>
+      <li>Share 1
+        <canvas id="share1_canvas"></canvas>
+      </li>
+      <li>Share 2
+        <canvas id="share2_canvas"></canvas>
+      </li>
+    </ul>
+    <script type="text/javascript" src="vss.js"></script>
+  </body>
+</html>
+
