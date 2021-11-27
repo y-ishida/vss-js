@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Visual Secret Sharing Scheme in JS</title>
+    <style>
+      li {
+        background-color: honeydew;
+        padding: 10px;
+        margin: 10px;
+      }
+      canvas {
+        vertical-align: top;
+        border: solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>VSS: Visual Secret Sharing</h1>
+
+    <p><a href="https://github.com/y-ishida/vss-js">GitHub</a></p>
+
+    <input type="file" id="input_file_a">
+    <input type="file" id="input_file_b">
+    <input type="file" id="input_file_c">
+
+    <ul>
+      <li>Original A
+        <canvas id="org_canvas_a"></canvas>
+      </li>
+      <li>Original B
+        <canvas id="org_canvas_b"></canvas>
+      </li>
+      <li>Original C
+        <canvas id="org_canvas_c"></canvas>
+      </li>
+      <li>Gray scale A
+        <canvas id="gray_canvas_a"></canvas>
+      </li>
+      <li>Gray scale B
+        <canvas id="gray_canvas_b"></canvas>
+      </li>
+      <li>Gray scale C
+        <canvas id="gray_canvas_c"></canvas>
+      </li>
+      <li>Binary A
+        <canvas id="binary_canvas_a"></canvas>
+      </li>
+      <li>Binary B
+        <canvas id="binary_canvas_b"></canvas>
+      </li>
+      <li>Binary C
+        <canvas id="binary_canvas_c"></canvas>
+      </li>
+      <li>Share 1 A
+        <canvas id="share1_canvas_a"></canvas>
+      </li>
+      <li>Share 2 A / Share 1 C
+        <canvas id="share2_canvas_a"></canvas>
+      </li>
+      <li>Share 1 B
+        <canvas id="share1_canvas_b"></canvas>
+      </li>
+      <li>Share 2 B / Share 2 C
+        <canvas id="share2_canvas_b"></canvas>
+      </li>
+    </ul>
+    <script type="text/javascript" src="vss.js"></script>
+    <script type="text/javascript" src="main2.js"></script>
+  </body>
+</html>
+
